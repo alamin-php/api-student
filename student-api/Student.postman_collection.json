@@ -1,0 +1,408 @@
+{
+	"id": "fadf91a5-76e1-e9d2-060e-433147162c79",
+	"name": "Student",
+	"description": "",
+	"order": [],
+	"folders": [
+		{
+			"name": "class",
+			"description": "",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"order": [
+				"78915f02-5700-d63a-bfdf-508c7a60d59d",
+				"6601024b-79de-7b43-efaa-e68acd0b8f87",
+				"4451273c-7d66-3004-606a-6b115a2b3460",
+				"65be352b-b762-c25b-a033-b0d70d87a720",
+				"b6b223be-5e09-ab1e-9543-ef101e0ee68d"
+			],
+			"owner": "9643165",
+			"folders_order": [],
+			"id": "7b306de5-14fa-e60d-8b84-520d2764b521"
+		},
+		{
+			"name": "subject",
+			"description": "",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"order": [
+				"7ec18346-045d-7497-6f53-3faa77a35fff",
+				"48cbf73b-c300-20b0-6239-c0d1727f926b",
+				"52189fb3-1f39-6b6e-0e57-48543c61a411",
+				"592ec127-eef9-6858-934b-6a63816e01f2",
+				"14c6dd8d-bc98-48a4-ca39-e3e0f8120eca"
+			],
+			"owner": "9643165",
+			"folders_order": [],
+			"id": "9e1e13cc-cedb-759c-248b-be2cab6f7318"
+		}
+	],
+	"folders_order": [
+		"9e1e13cc-cedb-759c-248b-be2cab6f7318",
+		"7b306de5-14fa-e60d-8b84-520d2764b521"
+	],
+	"timestamp": 1669026356663,
+	"owner": "9643165",
+	"public": false,
+	"requests": [
+		{
+			"id": "14c6dd8d-bc98-48a4-ca39-e3e0f8120eca",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/subject/4",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"data": null,
+			"dataMode": "params",
+			"name": "destroy",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669029744175,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "9e1e13cc-cedb-759c-248b-be2cab6f7318"
+		},
+		{
+			"id": "4451273c-7d66-3004-606a-6b115a2b3460",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/class/15",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "DELETE",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"data": null,
+			"dataMode": "params",
+			"name": "destroy",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669026451860,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "4451273c-7d66-3004-606a-6b115a2b3460",
+			"folder": "7b306de5-14fa-e60d-8b84-520d2764b521"
+		},
+		{
+			"id": "48cbf73b-c300-20b0-6239-c0d1727f926b",
+			"headers": "Accept: application/json\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/subject",
+			"folder": "9e1e13cc-cedb-759c-248b-be2cab6f7318",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "class_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subject_name",
+					"value": "Social Science",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subject_code",
+					"value": "103",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"version": 2,
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1669029791857,
+			"name": "store",
+			"description": "",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"responses": []
+		},
+		{
+			"id": "52189fb3-1f39-6b6e-0e57-48543c61a411",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/subject/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"data": null,
+			"dataMode": "params",
+			"name": "show",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669029025640,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "9e1e13cc-cedb-759c-248b-be2cab6f7318"
+		},
+		{
+			"id": "592ec127-eef9-6858-934b-6a63816e01f2",
+			"headers": "Accept: application/json\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/subject/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PATCH",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"data": [
+				{
+					"key": "class_id",
+					"value": "1",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subject_name",
+					"value": "English",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "subject_code",
+					"value": "101",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "update",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669029519083,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "9e1e13cc-cedb-759c-248b-be2cab6f7318"
+		},
+		{
+			"id": "65be352b-b762-c25b-a033-b0d70d87a720",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/class/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"data": null,
+			"dataMode": "params",
+			"name": "show",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669026868958,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "65be352b-b762-c25b-a033-b0d70d87a720",
+			"folder": "7b306de5-14fa-e60d-8b84-520d2764b521"
+		},
+		{
+			"id": "6601024b-79de-7b43-efaa-e68acd0b8f87",
+			"headers": "Accept: application/json\nContent-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/class",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"data": [
+				{
+					"key": "class_name",
+					"value": "Thirteen",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "store",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669026435196,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "6601024b-79de-7b43-efaa-e68acd0b8f87",
+			"folder": "7b306de5-14fa-e60d-8b84-520d2764b521"
+		},
+		{
+			"id": "78915f02-5700-d63a-bfdf-508c7a60d59d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/class",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"data": null,
+			"dataMode": "params",
+			"name": "index",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669026388410,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "78915f02-5700-d63a-bfdf-508c7a60d59d",
+			"folder": "7b306de5-14fa-e60d-8b84-520d2764b521"
+		},
+		{
+			"id": "7ec18346-045d-7497-6f53-3faa77a35fff",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/api/subject",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"data": null,
+			"dataMode": "params",
+			"name": "index",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669028735490,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"folder": "9e1e13cc-cedb-759c-248b-be2cab6f7318"
+		},
+		{
+			"id": "b6b223be-5e09-ab1e-9543-ef101e0ee68d",
+			"headers": "Accept: application/json\nContent-Type: application/x-www-form-urlencoded\n",
+			"headerData": [
+				{
+					"key": "Accept",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				},
+				{
+					"key": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/api/class/1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "PUT",
+			"collectionId": "fadf91a5-76e1-e9d2-060e-433147162c79",
+			"data": [
+				{
+					"key": "class_name",
+					"value": "One",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"name": "update",
+			"description": "",
+			"descriptionFormat": "html",
+			"time": 1669027437232,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"isFromCollection": true,
+			"collectionRequestId": "b6b223be-5e09-ab1e-9543-ef101e0ee68d",
+			"folder": "7b306de5-14fa-e60d-8b84-520d2764b521"
+		}
+	]
+}
