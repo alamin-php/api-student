@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Models\Subject;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 
 class SubjectController extends Controller
@@ -15,7 +16,13 @@ class SubjectController extends Controller
      */
     public function index()
     {
-        return Subject::all();
+        // return Subject::all();
+        $sub=DB::table('subjects')
+        ->leftJoin('classess', 'subjects.class_id', 'classess.id')
+        ->select('subjects.*', 'classess.class_name')
+        ->get();
+        return response()->json($sub);
+
     }
 
     /**
@@ -38,7 +45,7 @@ class SubjectController extends Controller
     {
         $validation = $request->validate([
             'class_id'=>'required',
-            'subject_name'=>'required|unique:subjects|max:255',
+            'subject_name'=>'required|max:255',
             'subject_code'=>'required|unique:subjects|max:255',
         ]);
         $subject = Subject::create($request->all());

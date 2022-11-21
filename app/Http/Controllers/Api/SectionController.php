@@ -2,8 +2,9 @@
 
 namespace App\Http\Controllers\Api;
 
-use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\Controller;
 
 class SectionController extends Controller
 {
@@ -14,17 +15,8 @@ class SectionController extends Controller
      */
     public function index()
     {
-        //
-    }
-
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
+        $section = DB::table('sections')->get();
+        return response()->json($section);
     }
 
     /**
@@ -35,7 +27,15 @@ class SectionController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $validation = $request->validate([
+            'class_id'=>'required',
+            'section_name'=>'required|string|max:255',
+        ]);
+        $data = array();
+        $data['class_id'] = $request->class_id;
+        $data['section_name'] = $request->section_name;
+        DB::table('sections')->insert($data);
+        return response()->json('Done!');
     }
 
     /**
@@ -46,7 +46,8 @@ class SectionController extends Controller
      */
     public function show($id)
     {
-        //
+        $showdata = DB::table('sections')->where('id', $id)->first();
+        return response()->json($showdata);
     }
 
     /**
@@ -69,7 +70,15 @@ class SectionController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $validation = $request->validate([
+            'class_id'=>'required',
+            'section_name'=>'required|string|max:255',
+        ]);
+        $data = array();
+        $data['class_id'] = $request->class_id;
+        $data['section_name'] = $request->section_name;
+        DB::table('sections')->where('id', $id)->update($data);
+        return response()->json('Updated!');
     }
 
     /**
@@ -80,6 +89,7 @@ class SectionController extends Controller
      */
     public function destroy($id)
     {
-        //
+        DB::table('sections')->where('id', $id)->delete();
+        return response()->json('Deleted');
     }
 }
